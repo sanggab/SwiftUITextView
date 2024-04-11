@@ -140,7 +140,6 @@ public struct TextView: UIViewRepresentable {
     public func updateUIView(_ textView: UIViewType, context: Context) {
         if reset.wrappedValue {
             DispatchQueue.main.async {
-//                _text.wrappedValue = ""
                 textView.text = text
                 textView.textColor = inputModel.focusColor
                 textView.font = inputModel.focusFont
